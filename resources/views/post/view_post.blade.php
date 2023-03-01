@@ -26,6 +26,7 @@
         <div class="card-body">
           <h5 class="card-title">name:- {{$post->user->name}}</h5>
           <p class="card-text">created_at :- {{$post->created_at}}</p>
+          <a href="{{route('user.show_posts',$post->user->id)}}"><button type="button" class="btn btn-info">show user posts</button></a>
         </div>
       </div>
       @dump($post)

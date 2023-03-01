@@ -15,8 +15,10 @@
     @include('post.nav')
 
 <!-- nav end -->
-<div class="text-center mt-5"><a href="{{route ('post.create')}}"><button type="button" class="btn btn-success" >Create Post</button></a></div>
-
+<div class="card-body">
+    <h5 class="card-title">name:- {{$user->name}}</h5>
+    <p class="card-text">id :- {{$user->id}}</p>
+</div>
 <table class="table me-3 ms-3 mt-5">
   <thead>
     <tr>
@@ -29,7 +31,7 @@
   </thead>
   <tbody>
 
-    @foreach ($posts as $post)
+    @foreach ($user->post as $post)
     <tr>
         <td>{{$post->id}}</td>
         <td >{{$post->title}}</td>
@@ -40,7 +42,6 @@
   </tbody>
 </table>
 
-@dump($posts)
 
 
 </body>
