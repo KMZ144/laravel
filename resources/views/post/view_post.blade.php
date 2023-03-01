@@ -24,7 +24,7 @@
           Post Creater Info
         </div>
         <div class="card-body">
-          <h5 class="card-title">name:- {{$post->name}}</h5>
+          <h5 class="card-title">name:- {{$post->user->name}}</h5>
           <p class="card-text">created_at :- {{$post->created_at}}</p>
         </div>
       </div>

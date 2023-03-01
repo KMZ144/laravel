@@ -17,11 +17,7 @@ class PostController extends Controller
             return view ('post.iti_blog',['posts'=>$posts]);
     }
     function getSinglePost($id){
-        $post = DB::table('posts')
-        ->join('users', 'users.id', '=', 'posts.user_id')
-        ->select('posts.*','users.name')
-        ->where('posts.id', '=',$id)
-        ->first();
+        $post = Post::find($id);
         return view ('post.view_post',['post'=>$post]);
     }
     function edit($id){
