@@ -7,7 +7,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-light " aria-current="page" href="/iti_blog">All Posts</a>
+            <a class="nav-link text-light " aria-current="page" href="/dashboard">Dashboard</a>
           </li>
         </ul>
       </div>

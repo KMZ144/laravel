@@ -15,12 +15,8 @@
           <input class="form-control" id="title" name="title" >
         </div>
         <div class="mb-3">
-            <label for="decription" class="form-label">Decription</label>
-            <textarea class="form-control" id="decription" rows="3" name="decription"></textarea>
-          </div>
-          <div class="mb-3">
-            <label for="creator" class="form-label">Post Creator</label>
-            <input class="form-control" id="creator" name="creator">
+            <label for="description" class="form-label">Decription</label>
+            <textarea class="form-control" id="description" rows="3" name="description"></textarea>
           </div>
         <button type="submit" class="btn btn-success">Submit</button>
       </form>
