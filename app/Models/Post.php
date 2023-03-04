@@ -12,7 +12,10 @@ class Post extends Model
     use HasFactory;
     protected $guarded = [];
     public $timestamps = false;
-    function user():BelongsTo{
+    protected $perPage=5;
+    //protected $with=['user'];
+    function user(){
         return $this->belongsTo(User::class);
+
     }
 }

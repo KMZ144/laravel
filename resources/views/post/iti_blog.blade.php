@@ -33,7 +33,7 @@
     <tr>
         <td>{{$post->id}}</td>
         <td >{{$post->title}}</td>
-        <td >{{$post->name}}</td>
+        <td >{{$post->user->name}}</td>
         <td>{{$post->created_at}}</td>
         <td><a href="{{route('post.show',$post->id)}}"><button type="button" class="btn btn-primary">View</button></a>
             <a href="{{route('post.edit',$post->id)}}"><button type="button" class="btn btn-info">Edit</button></a>
@@ -48,7 +48,7 @@
     @endforeach
   </tbody>
 </table>
-
+{{ $posts->links() }}
 @dump($posts)
 
 

@@ -10,10 +10,7 @@ use Illuminate\Support\Facades\DB;
 class PostController extends Controller
 {
     function getPosts(){
-        $posts = DB::table('posts')
-            ->join('users', 'users.id', '=', 'posts.user_id')
-            ->select('posts.*','users.name')
-            ->get();
+        $posts =Post::with('user')->paginate();
             return view ('post.iti_blog',['posts'=>$posts]);
     }
     function getSinglePost($id){
